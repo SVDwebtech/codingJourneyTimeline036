@@ -31,11 +31,22 @@ body {
     box-sizing: border-box;
 }
 
-.main__timeline-item {
+.main__timeline-article-section {
+    color: var(--main-timeline-item-fnt-color);
+    max-width: 50%;
+    margin-bottom: 5rem;
+}
+
+.main__timeline-article {
     color: var(--main-timeline-item-fnt-color);
     background-color: var(--main-timeline-item-bg-color);
     box-shadow: 5px 5px 20px rgba(0,0,0, .7);
-    max-width: 50%;
+    max-width: 90%;
+    padding: 1rem;
+}
+
+.main__timeline-article--paragraph {
+    text-align: justify;
 }
 
 ol, ul, li {
