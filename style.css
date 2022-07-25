@@ -32,15 +32,21 @@ body {
 }
 
 .main__timeline-article-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
     max-width: 50%;
     margin-bottom: 5rem;
+
+    position: relative;
 }
 
 .main__timeline-article {
     color: var(--primary-color-white);
     background-color: var(--primary-color-blue);
     box-shadow: 5px 5px 20px rgba(0,0,0, .7);
-    max-width: 90%;
+    max-width: 95%;
     padding: 1rem;
 }
 
@@ -54,6 +60,12 @@ body {
     border-radius: 50%;
     height: 2.5rem;
     width: 2.5rem;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translateX(50%);
 }
 
 ol, ul, li {
