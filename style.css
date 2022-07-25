@@ -1,3 +1,23 @@
+:root {
+
+
+--main-bg-color: #fff;
+
+--main-timeline-item-fnt-color: #fff;
+--main-timeline-item-bg-color: #042b4b;
+--main-timeline-item-bs-color: #000000;
+
+}
+
+
+
 body {
-    background-color: steelblue;
+    background-color: var(--main-bg-color);
+}
+
+.main__timeline-item {
+    color: var(--main-timeline-item-fnt-color);
+    background-color: var(--main-timeline-item-bg-color);
+    box-shadow: 5px 5px 20px rgba(0,0,0, .7);
+    max-width: 50%;
 }
