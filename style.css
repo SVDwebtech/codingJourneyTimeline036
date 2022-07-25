@@ -1,5 +1,6 @@
 :root {
 
+--fnt-color: #333;
 
 --main-bg-color: #fff;
 
@@ -9,10 +10,25 @@
 
 }
 
+html {
+    font-size: 62.5%;
+}
 
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fnt-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
     background-color: var(--main-bg-color);
+    box-sizing: border-box;
 }
 
 .main__timeline-item {
@@ -20,4 +36,12 @@ body {
     background-color: var(--main-timeline-item-bg-color);
     box-shadow: 5px 5px 20px rgba(0,0,0, .7);
     max-width: 50%;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
