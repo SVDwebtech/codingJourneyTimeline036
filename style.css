@@ -49,9 +49,9 @@ body {
 }
 
 .main__timeline-article-section {
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; */
 
     max-width: 50%;
     margin-bottom: 5rem;
@@ -62,12 +62,12 @@ body {
 .main__timeline-article {
     color: var(--primary-color-white);
     background-color: var(--primary-color-blue);
+    clip-path: polygon(0 0, 100% 0, 100% 1px, 97% 10px, 97% 100%, 0 100%, 0 0);
     box-shadow: 5px 5px 20px rgba(0,0,0, .7);
     max-width: 95%;
     padding: 1rem;
     padding-right: 3vw;
-    margin-top: 1.25rem;
-    clip-path: polygon(0 0, 100% 0, 100% 2%, 97% 20%, 97% 100%, 0 100%, 0 0);
+    margin: 0 2rem;
 }
 
 .main__timeline-article--paragraph {
@@ -82,7 +82,7 @@ body {
     width: 2.5rem;
 
     position: absolute;
-    top: 0;
+    top: -1.25rem;
     right: 0;
 
     transform: translateX(50%);
