@@ -31,6 +31,23 @@ body {
     box-sizing: border-box;
 }
 
+.main__timeline-container {
+    position: relative;
+}
+
+.main__timeline-container::after {
+    content: "";
+    width: .5rem;
+    height: 100%;
+    background-color: var(--primary-color-blue);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+}
+
 .main__timeline-article-section {
     display: flex;
     justify-content: flex-start;
