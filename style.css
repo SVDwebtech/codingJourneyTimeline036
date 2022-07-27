@@ -84,16 +84,13 @@ body {
     border-radius: 5px;
     clip-path: polygon(0 0, 100% 0, 100% 1px, 97% 10px, 97% 100%, 0 100%, 0 0);
     max-width: 95%;
-    padding: 1rem;
-    padding-right: 3vw;
+    padding: 1rem max(2rem, 4vw) 1rem max(1.5rem, 3vw);
     margin: 0 2rem;
 }
 
 .main__timeline-article-section:nth-of-type(2n) > .main__timeline-article-wrapper > .main__timeline-article {
-    
     clip-path: polygon(0 0, 0 1px, 3% 10px, 3% 100%, 100% 100%, 100% 0, 0 0);
-    padding-right: 0;
-    padding-left: 3vw;
+    padding: 1rem max(1.5rem, 3vw) 1rem max(2rem, 4vw);
 }
 
 .main__timeline-article--heading-h3 {
