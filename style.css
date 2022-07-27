@@ -35,8 +35,13 @@ body {
     box-sizing: border-box;
 }
 
+.header {
+    width: 100%;
+}
+
 .main__timeline-container {
     position: relative;
+    width: max(50rem, 100%);
 }
 
 .main__timeline-container::after {
