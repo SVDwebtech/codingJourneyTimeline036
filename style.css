@@ -62,10 +62,19 @@ body {
     font-weight: 700;
 }
 
-.header__heading-h1--bio {
-    color: var(--primary-color-blue);
+.header__paragraph {
+    /* color: var(--primary-color-blue); */
     font-size: clamp(1.6rem, 2vw, 2.2rem);
     font-weight: 700;
+    text-align: center;
+}
+
+.header__paragraph--span-red {
+    color: var(--primary-color-red);
+}
+
+.header__paragraph--span-blue {
+    color: var(--primary-color-blue);
 }
 
 .main__timeline-container {
