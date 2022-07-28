@@ -35,6 +35,10 @@ body {
     box-sizing: border-box;
 }
 
+.page-wrapper{
+    width: max(50rem, 100%);
+}
+
 .header {
     width: 100%;
 }
@@ -79,7 +83,6 @@ body {
 
 .main__timeline-container {
     position: relative;
-    width: max(50rem, 100%);
 }
 
 .main__timeline-container::after {
