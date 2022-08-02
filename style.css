@@ -5,10 +5,12 @@
 
 
 --primary-color-white: #fff;
---primary-color-blue: #042b4b;
+--primary-color-blue: #003e70;
 --primary-color-red: #790101;
 
 --secondary-color-smoke-white: #cacaca;
+--secondary-color-blue: #0069be;
+--secondary-color-black: #1f1f1f;
 
 --main-timeline-item-bs-color: #000000;
 
@@ -26,9 +28,16 @@ html {
     box-sizing: inherit;
 }
 
+h1, h2, h3, h4, h5, h6, button, a, li {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--fnt-color);
+    color: var(--secondary-color-black);
     font-size: 1.6rem;
     line-height: 1.5;
     background-color: var(--secondary-color-smoke-white);
@@ -103,45 +112,12 @@ body {
     z-index: 100;
 }
 
-.header {
-    width: 100%;
-}
+/* 
 
-.header__heading-h1 {
-    line-height: 1.3;
-    text-align: center;
-    margin-bottom: 2rem;
-}
 
-.header__heading-h1 > * {
-    display: block;
-}
 
-.header__heading-h1--name {
-    color: var(--primary-color-blue);
-    font-size: clamp(3rem, 3vw, 4rem);
-    font-weight: 900;
-    letter-spacing: 3px;
-}
 
-.header__heading-h1--mantra {
-    color: var(--primary-color-red);
-    font-size: clamp(2rem, 2.5vw, 3rem);
-    font-weight: 700;
-}
-
-.header__paragraph {
-    /* color: var(--primary-color-blue); */
-    font-size: clamp(1.6rem, 2vw, 2.2rem);
-    font-weight: 700;
-    text-align: center;
-}
-
-.header__paragraph--span-red {
-    color: var(--primary-color-red);
-}
-
-.header__paragraph--span-blue {
+.header__paragraph--techdesc {
     color: var(--primary-color-blue);
 }
 
@@ -160,6 +136,43 @@ body {
 
     padding: 1rem 2rem;
     margin: 2rem auto;
+} */
+
+/* ---------------------------------------------------------------- */
+/* ------------------           header            ----------------- */
+/* ---------------------------------------------------------------- */
+
+.header {
+    text-align: justify;
+    padding: 2rem;
+}
+
+.header__heading-h1 {
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    line-height: 1.2;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.header__heading-h1--boldtag {
+    color: var(--primary-color-blue);
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.header__paragraph {
+    font-size: clamp(1.8rem, 2.5vw, 3rem);
+    text-align: center;
+    padding: 0 .5rem;
+}
+
+.header__paragraph--love {
+    color: var(--primary-color-red);
+}
+
+.header__paragraph--techdesc {
+    color: var(--secondary-color-blue);
+    font-weight: 700;
 }
 
 hr {
