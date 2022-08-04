@@ -119,7 +119,7 @@ body {
 .header {
     text-align: justify;
     border: 5px solid var(--primary-color-blue);
-    padding: 2rem 2rem 10rem;
+    padding: 2rem 2rem 20vw;
     margin: 2rem 2rem 10rem 2rem;
     position: relative;
 }
@@ -255,7 +255,7 @@ button {
     display: block;
     border: 5px solid var(--primary-color-blue);
     border-radius: 50%;
-    width: 25%;
+    width: 35vw;
     margin: 0 auto;
 
     position: absolute;
