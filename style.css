@@ -45,7 +45,7 @@ body {
 }
 
 .page-wrapper {
-    width: max(50rem, 100%);
+    width: max(40rem, 100%);
 }
 
 .navbar {
