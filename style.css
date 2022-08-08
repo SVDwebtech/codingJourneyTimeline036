@@ -76,7 +76,6 @@ body {
 
     position: relative;
 }
-
 .navbar__icon-container--bar {
     background-color: var(--primary-color-white);
 
@@ -96,6 +95,8 @@ body {
     left: 7px;
 
     z-index: 100;
+    
+    transition: top .2s;
 }
 
 .navbar__icon-container--bar::after {
@@ -110,7 +111,22 @@ body {
     left: 7px;
 
     z-index: 100;
+
+    transition: top .2s;
 }
+
+.navbar__icon-container:hover > 
+.navbar__icon-container--bar::before {
+    top: 0.85rem;
+    backface-visibility: hidden;
+}
+
+.navbar__icon-container:hover > 
+.navbar__icon-container--bar::after {
+    top: 2.25rem;
+    backface-visibility: hidden;
+}
+
 
 /* ---------------------------------------------------------------- */
 /* ------------------           header            ----------------- */
